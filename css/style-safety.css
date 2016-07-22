@@ -1,0 +1,326 @@
+
+
+/* ============== GLOBAL =============== */
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: #868D9C;
+  text-align: justify;
+}
+
+h2 {
+  color: #5B616D;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+span {
+  font-weight: bold;
+}
+
+/* ============== HEADER ================= */
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+header nav {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  max-width: 950px;
+}
+
+header .logo {
+  background-image: url(../img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 150px;
+}
+
+header nav a {
+  color: #5B616D;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+header nav a:hover {
+  color: #ff3641;
+  font-size: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.navMobile {
+
+    display: none;
+    padding: 0;
+
+}
+
+.navMobile a {
+    text-decoration: none;
+}
+
+.navMobile i {
+    color: #fff;
+    background-color: #F55668;
+    padding: 6px 8px;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+}
+
+.navMobile:hover i {
+    color: #F55668;
+    background-color: #fff;
+}
+
+
+
+/* ============== SAFETY ============= */
+
+.safety {
+  display: flex;
+  justify-content: center;
+  background-color: #FCFCFF;
+  padding: 50px 0 200px 0;
+}
+
+.safety h1 {
+  font-size: 3rem;
+  font-weight: 100;
+  color: #ff3641;
+  margin: 0;
+}
+
+
+.safetyInt {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  max-width: 650px;
+}
+
+.safetyInt p {
+  font-size: 1.25rem;
+}
+
+.terms {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.terms p {
+  font-size: 1.15rem;
+  margin: 10px 0;
+}
+
+.terms a {
+  color: #5B616D;
+  margin: 5px 0;
+}
+
+.terms figure {
+  width: 15%;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.inssurance {
+    background-image:url(../img/inssurance.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 70px;
+        width: 70px;
+}
+
+.license {
+    background-image:url(../img/liscence.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 70px;
+    width: 70px;
+}
+
+.rating {
+    background-image:url(../img/rating.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 70px;
+    width: 70px;
+}
+
+.drugs {
+    background-image:url(../img/drugs.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 70px;
+    width: 70px;
+}
+
+.termsText {
+  width: 80%;
+
+}
+
+.termsText h2 {
+  margin: 0;
+}
+
+
+
+
+
+
+
+/* ============== FOOTER  ============== */
+
+
+footer {
+  padding: 50px 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #868D9C;
+}
+
+footer nav {
+  width: 90%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navFooter {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navFooter a {
+  transition: all 0.4s ease;
+}
+
+.navFooter a:hover {
+  color: #ff3641;
+}
+
+.become-icons {
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.become-icons a {
+  color: #ff3641;
+  transition: all 0.4s ease;
+}
+
+.become-icons a:hover {
+  color: #df646b;
+}
+
+footer p {
+  text-align: center;
+  margin: 5px 0;
+}
+
+footer p a {
+  transition: all 0.4s ease;
+}
+
+footer p a:hover {
+  color: #ff3641;
+}
+
+
+
+
+@media screen and (max-width: 780px) {
+
+/*===== HEADER ======*/
+
+header nav ul {
+  display: none;
+}
+
+.navMobile {
+  display: block;
+}
+
+/*============= SAFETY ============*/
+.terms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.terms figure {
+  margin-bottom: 20px;
+}
+
+.terms h2 {
+  text-align: center;
+}
+
+.termsText {
+  width: 100%;
+
+}
+
+/*================ FOOTER =============== */
+
+.navFooter, .become-icons {
+  display: none;
+}
+
+}

@@ -1,0 +1,440 @@
+/* ----- GLOBAL -------- */
+
+
+*{
+    font-family: 'lato', sans-serif;
+    margin: 0;
+    box-sizing: padding-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    border-bottom: 1px solid #ecf3f9;
+    padding-bottom: 50px;
+}
+
+.title {
+    margin: 50px;
+    text-align: center;
+}
+
+.title h1 {
+    color: #404B58;
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+}
+
+.title h2 {
+    color: #CCD1D9;
+    font-size: 1rem;
+}
+
+/* -------- HEAD ------- */
+
+.navHeader {
+    background-color: #222933;
+    padding: 10px;
+}
+
+.navHeader nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 85%;
+}
+
+.navHeader i {
+    color: #fff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul:first-of-type a {
+    padding: 0 7px;
+}
+
+header nav ul:last-of-type a {
+    color: #a8a8a8;
+    padding: 0 15px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+header nav ul:last-of-type a:hover {
+    color: #fff;
+}
+
+.navMobile {
+    display: none;
+    padding: 0;
+
+}
+
+.navMobile a {
+    text-decoration: none;
+}
+
+.navMobile i {
+    color: #a8a8a8;
+    background-color: #303844;
+    padding: 6px 8px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+
+.intro {
+    background-image: url(../img/bg_jobs.jpg);
+    background-size: cover;
+}
+
+.introHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.introHead figure {
+    background-image: url(../img/logo3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 60px;
+}
+
+.introHead a {
+    color: #fff;
+    background-color: #ff5c65;
+    padding: 13px 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+}
+
+.introHead a:hover {
+    background-color: #ff3641;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.intro div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    padding: 40px 0;
+}
+
+.intro h3 {
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+}
+
+.arrow i {
+    position: relative;
+    margin-top: -70px;
+    color: #d0d0d0;
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 1px 0 #e0dfdf;
+    border-radius: 100%;
+}
+
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.aboutContent {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    flex-wrap: wrap;
+}
+
+.aboutText {
+    width: 50%;
+    height: 70vh;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    color: #657385;
+
+}
+
+.aboutText span {
+    font-weight: bold;
+}
+
+.aboutText p {
+    margin: 15px;
+}
+
+.aboutImg {
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutImg figure {
+    background-image: url(../img/job_img01.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.cultureImg {
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cultureImg figure {
+    background-image: url(../img/jobs_img02.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+}
+
+
+.join {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.filtre {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+
+}
+
+.filtre p {
+
+}
+
+.filtre ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.filtre li {
+    padding: 0 10px;
+    box-sizing: padding-box;
+    margin:0;
+}
+
+.filtre a {
+    color: #404B58;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid #CCD1D9;
+}
+
+.filtre a:hover {
+    color: #ff3641;
+    border: 1px solid #ff3641;
+}
+
+.posteContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+    width: 80%;
+    margin: auto;
+
+}
+
+
+.posteContainer a {
+
+}
+
+.poste {
+    padding: 30px 20px;
+    margin: 20px 0;
+    width: 47%;
+    box-sizing: padding-box;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #CCD1D9;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.poste h4 {
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: lighter;
+}
+
+.poste div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 0.9rem;
+}
+
+.poste p {
+    color: #F55668;
+}
+
+.poste .operation {
+    background-color: #e6edf5;
+    padding: 5px;
+    color: #F55668;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.poste .operation:hover {
+    background-color: #fff;
+}
+
+.poste:hover {
+    background-color: #F55668;
+}
+
+.poste:hover h4 {
+    color: #fff;
+
+}
+
+.poste:hover p {
+    color: #fff;
+}
+
+
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a figure {
+    background-image:url(../img/footer_logo_jobs.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+/* ====== MEDIA QUERIES ==========*/
+
+@media screen and (max-width: 780px) {
+
+    .navHeader {
+        background-color: #222933;
+        padding: 4px;
+    }
+
+    .navHeader nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .navMobile {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+    .introHead a {
+        display: none;
+    }
+
+    .aboutText {
+        width: 100%;
+    }
+
+    .aboutImg {
+        width: 100%;
+    }
+
+    .cultureImg {
+        width: 100%;
+    }
+
+    .filtre ul {
+        flex-direction: column;
+        padding-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .filtre li {
+        padding: 0;
+        margin: 15px 0px;
+    }
+
+    .filtre p {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+
+    .poste {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+
+}

@@ -1,0 +1,675 @@
+/* ======== GLOBAL ========= */
+
+@font-face {
+    font-family: 'IcoMoon';
+    src: url(../fonts/IcoMoon-Free-master/Font/IcoMoon-Free.ttf);
+}
+
+
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    color: #1D1742;
+    text-align: center;
+}
+
+h3 {
+    font-size: 17px;
+    color: #F55662;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title {
+    font-weight: 400;
+    width: 35%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* ---------------  HEADER ---------------  */
+
+
+header nav {
+    padding: 20px 0;
+    width: 85%;
+    margin: auto;
+    box-sizing: padding-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+
+header li {
+    list-style: none;
+    padding: 0 8px;
+}
+
+header a {
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 15px;
+    padding-bottom: 28px;
+}
+
+header li:hover a {
+    color: #DA3949;
+}
+
+header nav figure {
+
+}
+
+header img {
+    width: 140px;
+    text-align: left;
+}
+
+.navMobile {
+
+    display: none;
+    padding: 0;
+
+}
+
+.navMobile a {
+    text-decoration: none;
+}
+
+.navMobile i {
+    color: #fff;
+    background-color: #F55668;
+    padding: 6px 8px;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+}
+
+.navMobile:hover i {
+    color: #F55668;
+    background-color: #fff;
+}
+/* --------------- HEADER BECOME --------------- */
+
+.becomeHeader {
+    background-color: transparent;
+    background-image: url(../img/img1-2x.jpg);
+    background-size: cover;
+    background-position: -130px 0;
+    height: 600px;
+}
+
+
+.becomeHeader a {
+    color: #b5b5b5;
+}
+
+.becomeHeader img {
+    filter:brightness(100);
+}
+
+.becomeIntro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: padding-box;
+}
+
+.becomeIntro h1 {
+    margin: 150px 0 150px 0;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.becomeIntro span {
+    font-weight: bold;
+}
+
+.become-btn {
+    margin: -70px;
+}
+
+.become-btn a {
+    background-color: #F55668;
+    padding: 20px 80px 20px 80px;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+
+.become-btn a:hover {
+    background-color: #fff;
+    color: #F55668;
+}
+
+/* --------------- DETAILS BECOME ------------ */
+
+.details {
+    margin-top: 100px;
+    text-align: justify;
+}
+
+.details h2 {
+    color: #F55668;
+    font-weight: lighter;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+p, h3 {
+    color: #797979;
+}
+
+.details p {
+    font-size: 18px;
+}
+
+.details h3 {
+    margin-bottom: 30px;
+}
+
+.detailsIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+
+.detailsdetails {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.details img, .ambiance img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.detailscol {
+    padding: 20px;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+
+/* --------------- FONCTIONNEMENT BECOME ------------ */
+
+.fonctionnement {
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.fonctionnementBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fonctionnement h2 {
+    color: #F55668;
+    font-weight: lighter;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+
+/* --------------- iPHONE BECOME ------------ */
+
+.iphone {
+    margin-top: 100px;
+    background-image: url(../img/bg-terminer-2x.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70vh;
+    height: 130vh;
+}
+
+.iphoneTexte {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.iphoneTexte li {
+    margin: 40px;
+}
+
+.iphoneTexte a {
+    text-decoration: none;
+    font-family: 'roboto', sans-serif;
+    font-size: 30px;
+    color: #797979;
+    transition: 0.3s ease;
+}
+
+.iphoneTexte a:hover {
+    color: #F55668;
+}
+
+
+/* --------------- AMBIANCE BECOME ------------ */
+
+.ambiance {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2E404A;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 10px 100px 10px;
+    box-sizing: padding-box;
+    width: 100%;
+
+}
+
+.ambiance h2 {
+    color: #fff;
+}
+
+.ambiance p, .ambiance h3 {
+    color: #B6BBC4;
+
+}
+
+.ambianceIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 60%;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.ambiance p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* --------------- REGLES BECOME ------------ */
+
+.regles {
+    background-color: #FCFCFF;
+    padding: 100px 0 100px 0;
+    box-sizing: padding-box;
+}
+
+.regles p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.reglesIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.reglesIntro h2 {
+    color: #F55668;
+    font-size: 55px;
+}
+
+.reglesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.reglesCol {
+    background-color: #fff;
+    margin: 20px;
+    padding: 0px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+}
+
+.reglesCol h4 {
+    text-align: center;
+    background-color: #F55668;
+    padding: 20px;
+    box-sizing: padding-box;
+    color: #fff;
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+    text-transform: uppercase;
+}
+
+.reglesCol p {
+    padding: 30px 30px 50px;
+}
+
+/* --------------- REGLES BECOME ------------ */
+.questions {
+    padding: 100px 0;
+    box-sizing: padding-box;
+    display: flex;
+    justify-content: center;
+}
+
+.questionsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.questions h2 {
+    color: #F55668;
+    font-size: 55px;
+    font-weight: lighter;
+}
+
+.questions ul {
+    list-style: none;
+    color: #818284;
+    font-size: 20px;
+    padding: 0;
+    width: 50%;
+    margin: 70px 0 70px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.list-title {
+padding: 0;
+}
+
+.list-title span {
+    font-family: 'IcoMoon';
+    color: #F55668;
+    font-size: 8px;
+}
+
+.list-title button {
+    background-color: transparent;
+    border-style: none;
+    color: #818284;
+    font-size: 22px;
+}
+
+.questions .list-title{
+    margin: 20px 0 20px 0;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.questions .list-title:active {
+    height: auto;
+}
+
+.questions .list-title:hover button {
+    color: #F55668;
+}
+
+.list-title li {
+    color: #a8a8a8;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.list-title ol {
+    list-style: none;
+}
+
+
+.questions p {
+    color: #2E404A;
+}
+
+.questions a {
+    color: #F55668;
+    text-decoration: none;
+}
+
+/* ------------- S'INSCRIRE BECOME ------------ */
+
+.inscrire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F8FB;
+    padding: 100px;
+    box-sizing: padding-box;
+}
+
+
+/* ---------------  FOOTER --------------- */
+
+footer {
+    padding: 30px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: padding-box;
+    align-items: center;
+    font-size: 14px;
+
+}
+
+footer .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+footer li {
+    padding: 10px;
+    box-sizing: padding-box;
+}
+
+footer .become {
+    transition: all 0.4s ease;
+    color: #F55668;
+}
+
+footer .become:hover {
+    color: #381960;
+}
+
+footer .icons {
+    padding: 5px;
+    display: flex;
+    box-sizing: padding-box;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: #969696;
+    transition: all 0.4s ease;
+}
+
+footer a:hover {
+    color: #F55668;
+}
+
+
+/* --------------- FOOTER BECOME ------------ */
+.become-icons {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 15%;
+    margin: auto;
+}
+
+footer p {
+    color: #969696;
+}
+
+.become-icons a {
+    color: #F55668;
+}
+
+.become-icons a:hover {
+    color: #ffa1ab;
+}
+
+
+/* ============= MEDIA QUERIES ==================*/
+
+@media screen and (max-width: 780px) {
+
+    /* ---------- HEADER ------------ */
+    header nav {
+    padding: 20px;
+    box-sizing: padding-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    header ul {
+        display: none;
+    }
+
+    header img {
+
+    }
+
+    header .navMobile {
+        display: block;
+    }
+
+
+    .becomeHeader {
+        background-color: transparent;
+        background-image: url(../img/img1-2x.jpg);
+        background-size: cover;
+        background-position: -500px 0;
+        height: 600px;
+    }
+
+
+    .becomeIntro {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .becomeIntro h1 {
+        font-size: 35px;
+        width: 90%;
+    }
+
+    .become-btn a {
+        background-color: #F55668;
+        padding: 10px;
+    }
+
+
+
+    .detailsIntro {
+        width: 95%;
+    }
+
+    .detailscol {
+        width: 95%;
+        padding: 20px 0 20px 0;
+    }
+
+
+    .iphone {
+        margin-top: 100px;
+        background-image: url(../img/bg-terminer-2x.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 44.5vh;
+        height: 90vh;
+    }
+
+    .iphoneTexte {
+        display: none;
+    }
+
+    .ambianceIntro {
+        width: 95%;
+
+    }
+
+
+
+    .reglesIntro {
+        width: 95%;
+    }
+
+    .reglesCol {
+        width: 100%;
+    }
+
+    .questions .list-title{
+        text-align: left;
+        height: 50px;
+    }
+
+    .questions ul {
+        padding: 0;
+        width: 95%;
+        margin: 70px 0 70px 0;
+
+    }
+
+    .footerBecome .nav, .footerBecome .become-icons {
+        display: none;
+    }
+
+}

@@ -1,0 +1,506 @@
+/* ======== GLOBAL ========= */
+
+@font-face {
+    font-family: 'IcoMoon';
+    src: url(../fonts/IcoMoon-Free-master/Font/IcoMoon-Free.ttf);
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    box-sizing: padding-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    color: #1D1742;
+    text-align: center;
+}
+
+h3 {
+    font-size: 17px;
+    color: #F55662;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.title {
+    font-weight: 400;
+    width: 35%;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* ---------------  HEADER ---------------  */
+
+header {
+    background-color: white;
+
+}
+
+header nav {
+    padding: 20px 0;
+    width: 85%;
+    margin: auto;
+    box-sizing: padding-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+
+header li {
+    list-style: none;
+    padding: 0 8px;
+}
+
+header a {
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 15px;
+    padding-bottom: 28px;
+}
+
+header li:hover a {
+    color: #DA3949;
+    border-bottom: 5px solid #DA3949;
+}
+
+header nav figure {
+
+}
+
+header img {
+    width: 140px;
+    text-align: left;
+}
+
+.navMobile {
+    width: 100%;
+    display: none;
+    padding: 0;
+}
+
+.navMobile a {
+    text-decoration: none;
+    top: 18px;
+    right: 18px;
+    position: absolute;
+}
+
+.navMobile i {
+    color: #fff;
+    background-color: #F55668;
+    padding: 6px 8px;
+    border-radius: 100%;
+    transition: all 0.4s ease;
+}
+
+.navMobile:hover i {
+    color: #F55668;
+    background-color: #fff;
+}
+
+/* ---------------  MENACE---------------  */
+
+.menace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    box-sizing: padding-box;
+    text-align: center;
+    height: 500px;
+    animation: bgColor 4s infinite;
+}
+
+.menace::before {
+    box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+
+.menace::after {
+    box-shadow: 0 0 3px rgba(0,0,0, 0.4), 0 20px 10px rgba(0,0,0, 0.7);
+}
+
+@keyframes bgColor {
+    0%, 100% {
+        background-color: #1D1742;
+
+    }
+
+    50% {
+        background-color: #352c69;
+    }
+}
+
+
+.menace h2 {
+    color: #fff;
+}
+
+.btn {
+    margin: 50px;
+
+}
+
+.btn:hover {
+    animation: wiggle 0.5s;
+}
+
+@keyframes wiggle {
+    0%, 100% {
+        transform: translateX(0px);
+    }
+
+    5% {
+        transform: translateX(10px);
+    }
+
+10% {
+    transform: translateX(-10px);
+}
+
+    20%, 60% {
+        transform: translateX(3px);
+    }
+
+    30%, 70% {
+        transform: translateX(10px);
+    }
+
+    40%, 80% {
+        transform: translateX(-10px);
+    }
+
+    90% {
+        transform: translateX(-3px);
+    }
+}
+
+
+.btn a {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #F55662;
+    border-radius: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 25px 40px 25px 40px;
+    transition: all 0.5s ease;
+
+}
+
+.menace .btn a:hover {
+    background-color: #F55662;
+    color: #1D1742;
+
+
+}
+
+
+
+.menace .fb-link {
+    font-size: 12px;
+    background-color: #365899;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+/* ---------------  POLITIQUES ---------------  */
+
+.tweet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ECF6F5;
+}
+
+.tweet p {
+    color: #fff;
+}
+
+#politiques {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap row;
+}
+
+.politique {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    margin: 25px;
+    text-align: center;
+    border-radius: 100%;
+    background-position: center;
+    transition: all 0.6s ease;
+    box-shadow: inset 0 0 0 0 rgba(245,86,104, 0.4), inset 0 0 0 12px rgba(29,23,66,0.4), 0 0px 0px rgba(0,0,0,0);
+
+}
+
+
+
+.description {
+
+    transition: all 0.6s ease;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background: rgba(247,91,104, 0);
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 0px rgba(245,86,104, 0.4), inset 0 0 0 0px rgba(247,91,104, 0);
+}
+
+.politique:hover {
+    animation: rotate 0.8s ease;
+}
+
+.politique:hover .description{
+    background: rgba(247,91,104, 0);
+    box-shadow: inset 0 0 0 100px rgba(245,86,104, 0.4), inset 0 0 0 20px rgba(247,91,104, 0.9);
+    animation: rotate 0.8s ease;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0.5deg);
+
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+.descriptionText {
+    color: rgba(255, 255, 255, 0);
+    position: relative;
+    transition: all 0.6s ease;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.politique:hover .descriptionText{
+    color: rgba(255, 255, 255, 1);
+    transform: scale(1);
+    opacity: 100;
+
+}
+
+.tweet iframe {
+    width: 100%;
+    max-height: 120vh;
+    height: 120vh;
+    min-height: 43vh;
+    box-sizing: content-box;
+}
+
+
+
+
+/* ---------------  DEFENDRE ---------------  */
+
+.defendre {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.raison {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.raison h2 {
+    color: #F55662;
+}
+
+.raison h3 {
+    margin: 10px;
+    color: #1D1742;
+    width: 80%;
+}
+
+.raison p {
+    margin: 15px;
+    font-size: 22px;
+    color: #969696;
+}
+
+.raison .btn a {
+    color: #F55662;
+}
+
+.raison .btn a:hover {
+    color: #fff;
+    background-color: #F55668;
+}
+
+
+/* ---------------  PHOTOS ---------------  */
+
+#photos {
+    background-color: #1D1742;
+    padding: 80px 0;
+    width: 100%;
+    box-sizing:padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    overflow: hidden;
+}
+
+#photos img{
+    margin: 10px;
+}
+
+
+/* ---------------  FOOTER --------------- */
+
+footer {
+    padding: 30px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: padding-box;
+    align-items: center;
+    font-size: 14px;
+
+}
+
+footer .nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+}
+
+footer li {
+    padding: 10px;
+    box-sizing: padding-box;
+}
+
+footer .become {
+    transition: all 0.4s ease;
+    color: #F55668;
+}
+
+footer .become:hover {
+    color: #381960;
+}
+
+footer .icons {
+    padding: 5px;
+    display: flex;
+    box-sizing: padding-box;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin: auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: #969696;
+    transition: all 0.4s ease;
+}
+
+footer a:hover {
+    color: #F55668;
+}
+
+
+/* ============= MEDIA QUERIES ==================*/
+
+@media screen and (max-width: 780px) {
+
+    /* ---------- HEADER ------------ */
+    header nav {
+        padding: 20px;
+        box-sizing: padding-box;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    header img {
+        float: left;
+    }
+
+    header .navMobile {
+        display: block;
+    }
+
+    /* ---------- TWEET VIDEO ------------ */
+
+    .tweet iframe {
+        width: 100%;
+        min-height: 43vh;
+        height: 57vh;
+        box-sizing: content-box;
+    }
+
+    /*  ---------- DEFENDRE ------------ */
+    .raison {
+        width: 90%;
+
+    }
+
+    /* ----------- GLOBAL ---------- */
+    .title {
+
+        width: 80%;
+
+    }
+
+    /*  ---------- PHOTOS ------------ */
+
+    .hidden {
+        display: none;
+    }
+
+
+    /* ------------ NAV FOOTER --------------*/
+    .footerIndex {
+        display: none;
+    }
+
+}
